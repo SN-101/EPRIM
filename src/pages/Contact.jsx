@@ -264,33 +264,6 @@ export default function Contact() {
           </div>
         </div>
       </section>
-      {/* <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-            Localisation
-          </h2>
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div style={{ height: "450px", width: "100%" }}>
-              <MapContainer
-                center={[34,97556677, -5.884600000000001]}
-                zoom={15}
-                scrollWheelZoom={true}
-                style={{ height: "100%", width: "100%" }}
-              >
-                <TileLayer
-                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                />
-                <Marker position={[34,97556677, -5.884600000000001]}>
-                  <Popup>
-                    <strong>EPRIM</strong> <br /> Notre emplacement à Meknès.
-                  </Popup>
-                </Marker>
-              </MapContainer>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -300,15 +273,16 @@ export default function Contact() {
 
         <div className="rounded-2xl shadow-2xl overflow-hidden border-4 border-white">
           <MapContainer
+            key="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             center={[34,97556677, -5.884600000000001]}
             zoom={16}
             style={{ height: "450px", width: "100%" }}
-            scrollWheelZoom={false}
+            scrollWheelZoom={true}
             attributionControl={false}
           >
             <TileLayer
               attribution='&copy; OpenStreetMap contributors'
-              url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
 
             <Marker

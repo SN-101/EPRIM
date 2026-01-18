@@ -1,5 +1,6 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import logoEPRIM from '../assets/images/logo-EPRIM.webp';
 
 export default function Navigation({ currentPage, onNavigate }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,7 +27,9 @@ export default function Navigation({ currentPage, onNavigate }) {
             className="flex-wrap justify-center items-center cursor-pointer"
             onClick={() => handleNavigate('home')}
           >
-            <div className="text-2xl justify-self-center font-bold text-[#0047AB]"><img className='h-16 p-0 w-32' src="/public/images/logo-EPRIM.webp" alt="logo EPRIM without bg" /></div>
+            <div className="text-2xl justify-self-center font-bold text-[#0047AB]">
+              <img className='h-16 p-0 w-32' src={logoEPRIM} alt="logo EPRIM without bg" />
+            </div>
             <div className="ml-3 text-sm text-gray-600 hidden md:block max-w-xs whitespace-nowrap">
               École Professionnelle d'Informatique et Management
             </div>

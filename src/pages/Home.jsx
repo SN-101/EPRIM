@@ -1,4 +1,5 @@
 import { GraduationCap, Award, Users, BookOpen } from 'lucide-react';
+import logoEPRIM from '../assets/images/logo-EPRIM.webp';
 
 export default function Home({ onNavigate }) {
   return (
@@ -6,7 +7,7 @@ export default function Home({ onNavigate }) {
       <section className="relative bg-gradient-to-br from-[#0047AB] to-[#003380] text-white py-24 md:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-              <img className="justify-self-center md:text-6xl mb-6" src="/public/images/logo-EPRIM.webp" />
+            <img className="justify-self-center md:text-6xl mb-6" src={logoEPRIM} />
             <p className="text-xl md:text-2xl mb-4 text-blue-100">
               École Professionnelle d'Informatique et Management
             </p>

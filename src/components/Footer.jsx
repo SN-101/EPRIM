@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin } from 'lucide-react';
+import logoEPRIM from '../assets/images/logo-EPRIM.webp';
 
 export default function Footer() {
   return (
@@ -6,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <img className="justify-self-center h-16 p-0 w-32" src="/public/images/logo-EPRIM.webp" />
+            <img className="justify-self-center h-16 p-0 w-32" src={logoEPRIM} />
             <p className="text-gray-300 text-sm leading-relaxed">
               École Professionnelle d'Informatique et Management - Formation d'excellence à Meknès
             </p>
